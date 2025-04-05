@@ -1,0 +1,21 @@
+ npm init -y 
+ npm i express ejs mongoose jsonwebtoken bcrypt cookie-parser multer
+
+ to apply tailwind.css
+ go to this link --> https://v3.tailwindcss.com/docs/installation
+
+
+1. npm install -D tailwindcss@3
+   npx tailwindcss init
+
+2. In tailwind.config.js update -->  content: ["./views/*.ejs"]
+
+3.create a folder called src inside that create  a file input.css
+add the below content
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+4.Go to package.json in that scripts and add this npx tailwindcss  -i ./src/input.css -o ./public/stylesheets/output.css --watch
+
+5.in every views--> .ejs file add csslink =>  <link rel="stylesheet" href="stylesheets/output.css">
