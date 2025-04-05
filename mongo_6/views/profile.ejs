@@ -15,7 +15,7 @@
         <div class=" flex items-start gap-3 ">
             
         <div class=" w-16 h-16 bg-red-500 rounded-md overflow-hidden">
-            <img class="w-full h-full object-cover " src="/images/uploads/<%= user.profilepic %>" alt="">
+           <a href="/profile/upload"><img class="w-full h-full object-cover " src="/images/uploads/<%= user.profilepic %>" ></a> 
         </div>
         <h2 class="text-3xl mb-3"><span class=" font-light">Hello</span>, <%= user.name.toUpperCase()%></h2>
         </div>
